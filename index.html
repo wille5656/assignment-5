@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1">
+    <meta charset="UTF-8">
+    <body style="background-color:gray;"> 
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<button onclick="addRow()">Add Row</button>
+    <button onclick="addColumn()">Add Column</button>
+    
+    
+
+    <br>
+        
+        <button onclick="removeRow()">Remove Row</button>
+<button onclick="removeColumn()">Remove Column</button>
+<form>
+    <p>
+        <label>Pick  color</label>
+        <select id="color-select" onchange="setCureentColor(this.value)">
+        <option value="#ff0000">red</option>
+        <option value="#ff00ff">pink</option>
+        <option value="#ff8000">orange</option>
+        <option value="#40ff00">green</option>
+        </select>  
+    </p>
+</form>
+<button onclick="setAllCurrent()">Fill All</button>
+<button onclick="setUncolored()">Fill All Uncolored</button>
+
+<button onclick="clearAll()">Clear All</button>
+
+<table id=main-grid>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
